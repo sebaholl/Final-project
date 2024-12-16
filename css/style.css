@@ -81,7 +81,7 @@
   /* Hero Section */
 /* Hero Section */
 .hero-section {
-    background-image: url("images/backgroudn.JPG"); /* Path to your image */
+    background-image: url('https://www.sea2see.org/cdn/shop/articles/2020-27-07_Plastic-pollution_1200x675_1d201c25-e683-4d10-8b3a-972958e6d7eb_1200x.jpg?v=1652363928'); /* Path to your image */
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents tiling */
@@ -89,12 +89,12 @@
     padding: 40px 20px;
     height: 700px; /* Adjust the height as needed */
     width: 100%;
-    color: white; /* Ensures text is readable */
+    color: var(--footer-color); /* Ensures text is readable */
 }
 
 /* Hero Section Text */
 .hero-section h1 {
-    font-size: 24px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 100px;
@@ -109,11 +109,12 @@
 .hero-section .button {
     display: inline-block;
     padding: 20px 50px;
-    background-color: var(--first-color); 
-    color: white;
+    background-color: var(--footer-color); 
+    color: var(--first-color);
     text-decoration: none;
     border-radius: 5px;
     margin-top: 200px;
+    font-weight: bold;
 }
 
 
@@ -163,7 +164,7 @@
   }
   
   .treaty-section h2 {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
     margin-bottom: 10px;
   }
@@ -188,28 +189,40 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 30px;
     font-weight: bold;
     color: black;
     margin-bottom: 100px;
-    border: 2px solid var(--first-color); /* Correctly specifying border */
-  }
+    border: 2px solid var(--first-color); /* Border color */
+    padding: 20px; /* Adds space inside the box */
+    box-sizing: border-box; /* Ensures padding is included in the width/height */
+    font-weight: lighter;
+}
+
   
   
   .info-section {
     margin-top: 20px;
-  }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Ensures text is centered */
+    height: 100vh; /* Makes the section take the full viewport height */
+}
   
-  .info-section h3 {
-    font-size: 20px;
+.info-section h1 {
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
+    font-weight: bold;
+}
   
-  .info-section p {
-    font-size: 14px;
+.info-section p {
+    font-size: 25px;
     line-height: 1.5;
-  }
+}
+
   
   .stats-containers {
     display: flex;
@@ -374,69 +387,3 @@
 
 
   /* Media Queries */
-@media (min-width: 768px) {
-    .header .logo {
-      width: 100px;
-      height: 100px;
-    }
-  
-    .header .nav-links a {
-      font-size: 16px;
-    }
-  
-    .hero-section {
-      padding: 40px 20px;
-    }
-  
-    .hero-section h1 {
-      font-size: 24px;
-    }
-  
-    .content-section {
-      flex-wrap: nowrap; 
-    }
-  
-    .content-section .circle-item .circle {
-      width: 200px;
-      height: 200px;
-    }
-  
-    .image-row {
-      flex-direction: row; 
-      justify-content: space-around;
-    }
-  
-    .image-box {
-      width: 550px; 
-      height: 500px;
-      margin-bottom: 50px;
-    }
-
-    .stats-containers .stat-container {
-        width: 800px; 
-        padding: 50px; 
-      }
-    
-      .experts-section {
-        width: 80%; 
-      }
-    
-      .expert-container {
-        flex-direction: row; 
-      }
-    
-      .bottom-row {
-        flex-direction: row; 
-      }
-    
-      .bottom-image,
-      .bottom-text {
-        width: 50%; 
-        height: 400px;
-      }
-    
-      .footer {
-        flex-wrap: nowrap; 
-      }
-
-  }
