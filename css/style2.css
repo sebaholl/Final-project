@@ -91,7 +91,7 @@ body {
 }
 
 .image {
-    background-image: url('https://s3-prod.pionline.com/s3fs-public/styles/1200x630/public/plastic-pollution-1550px.jpg');
+    background-image: url('https://images.pexels.com/photos/2409022/pexels-photo-2409022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
     color: var(--color-white);
     width: var(--width-full);
     height: auto;
