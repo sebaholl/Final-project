@@ -10,7 +10,7 @@
     --padding-default: 20px;
 
     /* Colors */
-    --bacground-color-navigstion:#005555b2;
+    --bacground-color-navigstion:#005555;
     --navigation-color1-:#ededed;
     --navigation-color2-:#F05A7E;
     --color-white:#FFFFFF;
@@ -40,7 +40,7 @@ body {
 
   /* navigation menu */
   .navigation {
-    background-color: var(--footer-color);
+    background-color: var(--color-end);
     position: relative;
     z-index: 1000;
     display: flex;
@@ -77,7 +77,7 @@ body {
 }
 
 .menu_page ul li a {
-    color: var(--first-color);
+    color: var(--bacground-color-navigstion);
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
@@ -548,19 +548,60 @@ body {
     margin: 5px;
 }
 
-.end_content_block_box button{
-    background-color: #000000;
-    border: 1px solid;
-    padding: 20px 20px;
-    border-radius: 200px;
-    font-size: 12px;
-    font-weight: 700;
-    cursor: pointer;
-    margin-top: 0px;
+ /* Footer */
+ .end_content { 
+    width: var(--width-full);
+    margin: 20px auto;
+    background-color: var(--color-end);
+    height: 150px;
+    display: flex;
+    grid-template-columns: repeat(7, 1fr);
+    gap: var(--grid-gap);
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-evenly;
 }
 
+.end_content_block_text { 
+     margin:0 0 0 20px;
+     font-size: 20px;
+}
+
+.end_content_block_icon {
+    display: flex;
+    flex-direction:column;
+    margin-top: 40px;
+   font-size: 30px;
+}
+
+.quarter {
+    width: 25%;
+}
+.half {
+    width: 50%;
+    border-left: 1px solid var(--bacground-color-navigstion);
+    text-align: right;
+}
+
+.end_content_block_box img {
+    padding: 20px; 
+    width: 140px; 
+    height: 155px; 
+    cursor: pointer; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+
 .end_content_block_text_left i {
-    margin: 0 10px 0 0
+    margin: 0px 70px 0 0;
+    font-size: 35px;
+}
+
+.end_content_block_text_right {
+    font-size: 20px;
+    margin-right: 100px;
 }
 
 @media screen and (max-width: 768px) 
@@ -596,12 +637,7 @@ body {
         height: fit-content;
         width: 50%;
       }
-      .menu_page ul {
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-        width: 10%;
-      }
+      
       .Help_content {
         display: flex;
         flex-direction: column;
@@ -689,16 +725,4 @@ body {
         padding: 10px 20px; 
     }
 
-    .menu_page {
-        width: auto; 
-    }
-
-    .menu_page ul {
-        justify-content: flex-end; 
-    }
-
-    .menu_page ul li a {
-        font-size: 14px; 
-        padding: 10px; 
-    }
 }
