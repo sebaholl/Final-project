@@ -38,50 +38,56 @@ body {
     height: auto;
 }
 
-.navigation {
-    background-color: #e5e1dae0;
+  /* navigation menu */
+  .navigation {
+    background-color: var(--footer-color);
     position: relative;
     z-index: 1000;
     display: flex;
+    align-items: center; 
+    padding: 0 30px; 
+    height: 100px; 
 }
 
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 0 20px
+    margin: 0 0 0 20px;
+}
+
+.logo img {
+    height: 90px; 
+    max-height: 100%; 
+    object-fit: contain; 
 }
 
 .menu_page { 
-    width: 100%; 
-    max-width: var(--width-12col); 
+    width: var(--width-12col );
     margin: 0 auto;
 }
 .menu_page ul {
     display: flex;
-    justify-content: space-around;
-    align-items: center; 
-    width: 100%; 
-    padding: 0; 
 }
 
 
 .menu_page ul li {
     list-style-type: none;
-    margin: 0; 
+    margin: 10px 0 10px 300px;
 }
 
 .menu_page ul li a {
-    color: #333333;
+    color: var(--first-color);
     text-decoration: none;
     text-transform: uppercase;
-    padding: 10px 15px; 
-    display: block; 
-    transition: color 0.3s ease; 
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+    font-size: 20px;
 }
 
 .menu_page ul li a:hover {
-    color: #005555;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
 .image {
