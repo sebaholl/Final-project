@@ -18,6 +18,7 @@
     --color-green-dark:#069A8E;
     --color-green-light:#A1E3D8;
     --color-end:#E5E1DA;
+    --fourth-color : #5dba5d;
 }
 
 /* reset */
@@ -86,8 +87,7 @@ body {
 }
 
 .menu_page ul li a:hover {
-    font-size: 30px;
-    font-weight: bolder;
+    color: var(--fourth-color);
 }
 
 .image {
