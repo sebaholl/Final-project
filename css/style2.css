@@ -91,7 +91,7 @@ body {
 }
 
 .image {
-    background-image: url('https://images.pexels.com/photos/2409022/pexels-photo-2409022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-image: url('https://images.pexels.com/photos/2409022/pexels-photo-2409022.jpeg?auto=compress&cs=tinysrgb&w=800&h=500');
     color: var(--color-white);
     width: var(--width-full);
     height: auto;
