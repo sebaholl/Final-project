@@ -34,6 +34,7 @@
     align-items: center; 
     padding: 0 30px; 
     height: 100px; 
+    width: var(--width-full);
 }
 
 .logo {
@@ -50,17 +51,20 @@
 }
 
 .menu_page { 
-    width: var(--width-12col );
-    margin: 0 auto;
+    width: var(--width-full);
+    margin: auto;
 }
+
 .menu_page ul {
     display: flex;
+    justify-content: flex-end;
+    gap: 200px;
+    padding: 0;
+    margin-right: 100px;
 }
-
-
 .menu_page ul li {
-    list-style-type: none;
-    margin: 10px 0 10px 300px;
+    margin: 10px 0; 
+    list-style: none;
 }
 
 .menu_page ul li a {
@@ -74,6 +78,7 @@
 
 .menu_page li a:hover {
     color: var(--fourth-color);
+    font-size: 25px;
 }
 
 
